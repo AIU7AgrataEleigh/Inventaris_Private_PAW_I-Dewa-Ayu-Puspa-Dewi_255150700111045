@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.btn-tambah {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    background-color: #198754;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn-tambah:hover {
+    background-color: #157347;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f1f3f5;
+}
+
+.btn-edit,
+.btn-hapus {
+    display: inline-block;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: #0d6efd;
+    color: white;
+    margin-right: 5px;
+}
+
+.btn-edit:hover {
+    background-color: #0b5ed7;
+}
+
+.btn-hapus {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-hapus:hover {
+    background-color: #bb2d3b;
+}
+
+form {
+    max-width: 600px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    background-color: #198754;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #157347;
+}
+
+.btn-kembali {
+    display: inline-block;
+    margin-top: 15px;
+    color: #555;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 20px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 700px;
+    }
+}
+
+.modal-hapus {
+    width: 90%;
+    max-width: 420px;
+    padding: 30px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-hapus::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-hapus h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.modal-hapus p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.modal-aksi {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn-batal,
+.btn-konfirmasi-hapus {
+    display: inline-block;
+    padding: 9px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-batal {
+    background-color: #e9ecef;
+    color: #333;
+}
+
+.btn-konfirmasi-hapus {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-konfirmasi-hapus:hover {
+    background-color: #bb2d3b;
+}
